@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap');
+:root {
+    --white-color: #fff;
+    --green-color: #002B31;
+  }
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    
+    background-color: #002B31;
+
+}
+
+.nav {
+   /* background-color: #002B31;*/
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
+.navlist {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navlist.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 140px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #fff;
+    transition: all .5s ease;
+    border-bottom: 1px solid #EEEEEE;
+}
+.navlist.fixed .products a {
+    color: #000;
+}
+.navlist.fixed .logo {
+color: #000;
+}
+.navlist .logo {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+
+.navlist .products {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navlist .products a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.navlist button {
+    margin-left: 40px;
+}
+
+.navlist button {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.navlist .sign {
+    background-color: #002B31;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    width: 60px;
+}
+
+/* section hero start */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* background-color: #002B31;*/
+}
+.hero .container .blockhero{
+    width: 440px;
+    height: 40px;
+    background-color: #003D45;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 18px;
+    margin-top: 140px;
+}
+.hero .container .text{
+    font-size: 80px;
+    font-weight: 600;
+    color: #CDCBFF;
+}
+.hero .container .subtext{
+    position: relative;
+    width: 440px;
+    height: auto;
+    font-size: 20px;
+    color: #CDCBFF;
+    margin-top: 20px;
+}
+
+/* section hero end */
+
+/* section blockcard start */
+.blockcard{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: row;
+}
+.blockcard .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.blockcard .card{
+    position: relative;
+    width: 320px;
+    height: auto;
+    border-top: 1px solid #006877 ;
+    border-bottom: 1px solid #006877 ; 
+}
+
+.blockcard .card .img{
+    width: 320px;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+.blockcard .card .title{
+    color: #fff;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.blockcard .card img{
+    width: 320px;
+}
+.blockcard .card .subtext {
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.blockcard .card .subtext span{
+    color: #a3a3a3;
+}
+
+.blockcard .card .plus{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    background-color: rgba(110, 110, 110, 0.5);
+    bottom: 139px;
+    right: 15px;
+    font-size: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 100;
+    pointer-events: none;
+}
+
+ .card img:hover {
+    transform: scale(1.1);
+    transition: all .8s ease;
+ }
+
+.card:hover > .plus { 
+    transform: rotate(90deg); /* Equal to rotateZ(45deg) */
+    transition: all .8s ease;
+}
+
+
+/* cooperation start */
+
+.cooperation {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    display: flex;
+}
+.cooperation .container .title {
+    position: relative;
+    color: #fff;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+}
+.cooperation .container .company {
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    padding: 60px 0;
+}
+.cooperation .container .company li{
+    border-right: 1px solid #006877;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+.cooperation .container .company li:nth-child(4){
+    border-right: none;
+}
+.cooperation .container .blocktext{
+    position: relative;
+    width: 84%;
+    height: auto;
+    background-color: #003D45;
+    padding: 10px 0;
+    border-radius: 15px;
+    color: var(--white-color);
+    text-align: center;
+    margin: 0 auto;
+}
+.cooperation .container .subtext{
+    position: relative;
+    margin: 160px 0;
+    width: 100%;
+    height: auto;
+    float: left;
+    color: var(--white-color);
+    font-size: 18px;
+}
+.cooperation .container .maintext{
+    position: relative;
+    width: 65%;
+    float: left;
+    font-size: 46px;
+    color: var(--white-color);
+}
+
+/* cooperation end */
+/* searchinv start */
+.searchinv {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: var(--white-color);
+    padding: 120px 0;
+}
+.searchinv .container .main {
+    display: flex;
+}
+.searchinv .container .main .leftpart{
+    position: relative;
+    width: 35%;
+    height: auto;
+    flex: 1;
+}
+.searchinv .container .main .leftpart .list li{
+    font-size: 26px;
+    color: #a3a3a3;
+    list-style: none;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 20px;
+    border-bottom: 1px solid #a3a3a3;
+    padding: 10px 0;
+}
+
+.searchinv .container .main .leftpart .bottompart{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.searchinv .container .main .leftpart .bottompart button{
+    width: 200px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+
+.rightpart {
+    position: relative;
+    width: 65%;
+    flex: 2;
+    height: 600px;
+    background-color: #CDCBFF;
+    overflow: hidden; /* Скрытие контента, который выходит за пределы контейнера */
+}
+
+.rightpart a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;  /* Добавлено для занимания всей ширины родительского контейнера */
+    height: auto; /* Добавлено для автоматической высоты */
+}
+
+.rightpart a.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1; /* Поднимаем активный слайд наверх */
+}
+
+.rightpart img {
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для активного текста слайда */
+.main .leftpart .list li.active {
+    font-size: 26px;
+    color: #000 !important;
+}
+
+.main .leftpart .list li {
+    position: relative;
+    border-bottom: 1px solid #a3a3a3;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.main .leftpart .list li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.6%;
+    background-color: #000; /* Начальный цвет загрузки (черный) */
+    transform-origin: left center;
+    transform: scaleX(0); /* Изначально полоса не видима */
+    transition: transform 4s linear; /* Анимация за 4 секунды */
+}
+
+.main .leftpart .list li.active::before {
+    transform: scaleX(1); /* При активации слайда полоса расширяется до 100% */
+}
+
+/* cooperation end */
+/* complex start */
+.complex{
+    position: relative;
+    height: auto;
+    background-color: #CDEED3;
+    padding: 60px 0;
+    width: 1400px;
+    margin: 0 auto;
+}
+.complex .container .green{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+}
+.complex .container .green .lefttext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 80%;
+    padding-left: 20px;
+}
+
+.complex .container .green .lefttext .title{
+    position: relative;
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+.complex .container .green .lefttext p{
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+.complex .container .green .lefttext span{
+    font-size: 14px;
+    padding-top: 20px;
+    margin-right: 86px;
+    border-bottom: 1px solid #000;
+}
+
+
+.complex .container .green .rightagent{
+    position: relative;
+    display: flex;
+    width: 50%;
+    float: right;
+    justify-content: space-between;
+}
+.complex .container .green .rightagent img{
+    border-right: 1px solid #000;
+    margin-left: 40px;
+padding-right: 40px;
+}
+/* complex end */
+
+
+/* stimul section start */
+.stimul {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+}
+
+.stimul .container {
+    display: flex;
+    flex-direction: row;
+}
+.stimul .container .left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 60px;
+    border-bottom: 1px solid #000;
+    margin-right: 20px;
+}
+.stimul .container .left .title{
+    font-size: 46px;
+    font-weight: 800;
+}
+.stimul .container .left p{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 60px 0;
+    width: 65%;
+}
+
+.stimul .container .left img{
+    width: 300px;
+    height: 200px;
+}
+
+
+.stimul .container .right{
+    position: relative;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.stimul .container .right .mainnumber {
+    position: relative;
+    font-size: 200px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.stimul .container .right .mainnumber p{
+    font-size: 16px;
+    float: left;
+    margin-bottom: 40px;
+}
+.stimul .container .right .firstline {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 100px;
+    font-weight: 600;
+    border-bottom: 1px solid #000;
+}
+.stimul .container .right .firstline p{
+    font-size: 16px;
+    float: left;
+    margin-bottom: 40px;
+}
+.stimul .container .right .secondline {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 100px;
+    font-weight: 600;
+    border-bottom: 1px solid #000;
+}
+.stimul .container .right .secondline p{
+    font-size: 16px;
+    float: left;
+    margin-bottom: 40px;
+}
+/* stimul section end */
+
+/* testimonial section start */
+
+.testimonials {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+.testimonials .mainslider .slider-container {
+width: 100%;
+overflow: hidden;
+}
+
+
+.testimonials .mainslider .slider-container .slide {
+display: none;
+transition: opacity 0.6s ease;
+}
+
+
+.testimonials .mainslider .slider-container .slide img {
+width: 100%;
+filter: brightness(40%);
+}
+
+.testimonials .mainslider .slider-container .slide .text {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    color: #CDEED3;
+    font-size: 16px;
+    width: 40%;
+}
+.testimonials .mainslider .slider-container .slide .text .maintext{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 36px;
+}
+
+.testimonials .mainslider .slider-container .arrows {
+    position: absolute;
+    bottom: 100px;
+    left: 190px;
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonials .mainslider .slider-container .arrows .left,
+.testimonials .mainslider .slider-container .arrows .right {
+width: 40px;
+height: 40px;
+background-color: rgba(163, 163, 163, 0.4);
+border: 1px solid #CDEED3;
+color: #CDEED3;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50px;
+margin: 4px;
+font-size: 26px;
+}
+
+.testimonials .mainslider .slider-container .arrows .right:hover{
+    cursor: pointer;
+    background-color: rgba(163, 163, 163, 0.8);
+    border: none;
+}
+.testimonials .mainslider .slider-container .arrows .left:hover{
+    cursor: pointer;
+    background-color: rgba(163, 163, 163, 0.8);
+    border: none;
+}
+
+
+
+/* testimonial section end */
+
+
+/*  Last news section start */
+.news {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+.news .container .subtitle {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.news .container .maintitle {
+    font-size: 46px;
+    font-weight: 600;
+    width: 20%;
+}
+.news .container .mainnews{
+    display: flex;
+    flex-direction: row;
+}
+
+.news .container .mainnews .news {
+    border-bottom: 1px solid #a3a3a3;
+    margin-right: 80px;
+}
+.news .container .mainnews .news p{
+    padding: 20px 0;
+}
+/*  Last news section end */
+
+
+/*  prefooter section start */
+.prefooter {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #EEEEEE;
+    
+}
+
+.prefooter .container .text {
+    font-size: 260px;
+    font-weight: 600;
+    text-align: center;
+}
+.prefooter .container .table {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0;
+    justify-content: space-between;
+}
+
+.prefooter .container .table li{
+    margin: 40px 0;
+    list-style: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+/*  prefooter section end */
+
+
+/*  footer section start */
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #EEEEEE;
+}
+
+footer .container{
+    padding: 10px 0;
+}
+
+
+footer .container .footernav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #a3a3a3;
+    border-bottom: 1px solid #a3a3a3;
+    padding: 10px 0;
+}
+
+footer .container .footernav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .container .footernav li {
+    margin-right: 40px;
+    list-style: none;
+}
+
+
+footer .container .footernav .social {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .container .footernav .social a{
+    padding-right: 20px;
+}
+footer .container .footernav img{
+    background-color: #d9d9d9;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+footer .container .text {
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+footer .container .text p{
+    font-size: 12px;
+    font-weight: 100;
+    padding-top: 20px;
+}
+
+/*  footer section end */
